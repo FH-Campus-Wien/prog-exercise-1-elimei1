@@ -18,7 +18,7 @@ public class App {
         System.out.println("    \\___|----|  |   __");
         System.out.println("     \\  }{ /\\ )_ / _\\");
         System.out.println("     /\\__/\\ \\__O (__");
-        System.out.println("    (--/\\--) \\__/");
+        System.out.println("    (--/\\--)    \\__/");
         System.out.println("    _)( )(_");
         System.out.println("   `---''---`");
     }
@@ -30,6 +30,9 @@ public class App {
         int=012;
         long=80L;
         float=44e-1f;
+        float=5.5f;
+        8.88e1;
+        int=99.9;
 
 
 
@@ -37,17 +40,32 @@ public class App {
 
     //todo Task 4
     public void addTwoNumbers(){
-        // input your solution here
+        Scanner scanner = new Scanner(System.in);
+        int num1 = Scanner(System.in);
+        int num2 = Scanner(System.in);
+        int sum = num1+num2;
+        System.out.println(sum);
+
     }
 
     //todo Task 5
     public void swapTwoNumbers(){
-        // input your solution here
+
+        Scanner x = new Scanner(System.in);
+        Scanner y = new Scanner(System.in);
+        x=x+y;
+        y=x-y;
+        x=x-y;
+
+        System.out.println("x:"+x+", y:"+y);
+
     }
 
     //todo Task 6
     public void compareTwoNumbers(){
-        // input your solution here
+        Scanner n1 = new Scanner(System.in), n2 = new Scanner(System.in);
+        if n1 > n2 println("n1 > n2");
+
     }
 
     //todo Task 7
