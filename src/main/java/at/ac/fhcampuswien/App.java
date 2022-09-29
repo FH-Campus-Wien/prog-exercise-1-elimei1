@@ -64,18 +64,57 @@ public class App {
     //todo Task 6
     public void compareTwoNumbers(){
         Scanner n1 = new Scanner(System.in), n2 = new Scanner(System.in);
-        if n1 > n2 println("n1 > n2");
+        if (n1>n2) {System.out.println("n1 > n2");}
+        if (n1>n2) {System.out.println("n2 > n1");}
+        if (n1==n2) {System.out.println("n1 == n2");}
 
     }
 
     //todo Task 7
     public void ratingSalesPerson(){
-        // input your solution here
+        Scanner revenue = new Scanner(System.in);
+        switch(revenue) {
+            case 0> revenue >= i:
+                System.out.println("Invalid Revenue");
+                break;
+            case 0<= revenue <20000:
+                System.out.println("Poor Sales Revenue");
+                break;
+            case :
+                System.out.println("Avarage Sales Revenue");
+                break;
+            case :
+                System.out.println("Good Sales Revenue");
+                break;
+            case :
+                System.out.println("Excellent Sales Revenue");
+                break;
+
+        }
+
     }
 
     //todo Task 8
     public void getCommissionRate(){
-        // input your solution here
+        Scanner CC = new Scanner(System.in);
+        switch(CC) {
+            case 1:
+                System.out.println("Your Commission Rate was set to 0.01");
+                break;
+            case 2:
+                System.out.println("Your Commision Rate was set to 0.02");
+                break;
+            case 3:
+                System.out.println("Your Commission Rate was set to 0.03");
+                break;
+            case 4:
+                System.out.println("Your Commission Rate was set to 0.04");
+                break;
+            default:
+                System.out.println("Your Commission Rate was set to 0.00");
+                break;
+
+        }
     }
 
     //todo Task 9
@@ -85,7 +124,12 @@ public class App {
 
     //todo Task 10
     public void transposedNumbers(){
-        // input your solution here
+        Scanner number = new Scanner(System.in);
+        int rest;
+        while (number !=0){
+            rest = number % 2;
+            number = number / 2;
+            System.out.print(rest);
     }
 
 
