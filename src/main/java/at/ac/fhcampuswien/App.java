@@ -25,14 +25,23 @@ public class App {
 
     //todo Task 3
     public void sumOfLiterals(){
-        jar= 'Z';
+        char ch= 'Z';
         int hexVal = 0xface;
-        int=012;
-        long=80L;
-        float=44e-1f;
-        float=5.5f;
-        8.88e1;
-        int=99.9;
+        int i1=012;
+        long l=80L;
+        float f1=44e-1f;
+        float f2=5.5f;
+        double d1= 8.88e1;
+        double d2= 99.9;
+
+        int a =(int) f1;
+        int b =(int) f2;
+        int c =(int) l;
+        int d =(int) d1;
+        int e =(int) d2;
+        int f=Character.getNumericValue(ch);
+        int sum= a+b+c+d+e+f+hexVal+i1;
+        System.out.println(sum);
 
 
 
@@ -41,8 +50,8 @@ public class App {
     //todo Task 4
     public void addTwoNumbers(){
         Scanner scanner = new Scanner(System.in);
-        int num1 = Scanner(System.in);
-        int num2 = Scanner(System.in);
+        int num1 = scanner.nextInt();
+        int num2 = scanner.nextInt();
         int sum = num1+num2;
         System.out.println(sum);
 
@@ -51,8 +60,9 @@ public class App {
     //todo Task 5
     public void swapTwoNumbers(){
 
-        Scanner x = new Scanner(System.in);
-        Scanner y = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
+        int y = scanner.nextInt();
         x=x+y;
         y=x-y;
         x=x-y;
@@ -63,7 +73,9 @@ public class App {
 
     //todo Task 6
     public void compareTwoNumbers(){
-        Scanner n1 = new Scanner(System.in), n2 = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
+        int n1 = scanner.nextInt();
+        int n2 = scanner.nextInt();
         if (n1>n2) {System.out.println("n1 > n2");}
         if (n1>n2) {System.out.println("n2 > n1");}
         if (n1==n2) {System.out.println("n1 == n2");}
@@ -72,7 +84,11 @@ public class App {
 
     //todo Task 7
     public void ratingSalesPerson(){
-        Scanner revenue = new Scanner(System.in);
+
+        Scanner scanner = new Scanner(System.in);
+        int revenue = scanner.nextInt();
+
+        if (revenue <0 )
         switch(revenue) {
             case 0> revenue >= i:
                 System.out.println("Invalid Revenue");
@@ -96,8 +112,10 @@ public class App {
 
     //todo Task 8
     public void getCommissionRate(){
-        Scanner CC = new Scanner(System.in);
-        switch(CC) {
+        Scanner scanner = new Scanner(System.in);
+        int p = scanner.nextInt();
+
+        switch(p) {
             case 1:
                 System.out.println("Your Commission Rate was set to 0.01");
                 break;
@@ -119,18 +137,37 @@ public class App {
 
     //todo Task 9
     public void leapyear(){
-        // input your solution here
+        Scanner scanner = new Scanner(System.in);
+        int i = scanner.nextInt();
+
+
+        if ((i % 4 != 0) && i % 400 !=0) {
+            System.out.println("Leapyear");
+        }
+        else if ((i % 100 ==0 ) && i  % 400 !=0) {
+            System.out.println("Not a Leapyear");
+        }
+        else {
+            System.out.println(i + " is not a leap year.");
+
+    }
     }
 
     //todo Task 10
-    public void transposedNumbers(){
-        Scanner number = new Scanner(System.in);
-        int rest;
-        while (number !=0){
-            rest = number % 2;
-            number = number / 2;
-            System.out.print(rest);
-    }
+    public int transposedNumbers(){
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+
+
+            int reverse = 0;
+            do{
+                reverse= reverse*10+(number%10);
+                number /= 10;
+            } while  (number > 0);
+            System.out.println("Reversed:" + reverse);
+            return reverse;
+        }
+
 
 
     public static void main(String[] args){
