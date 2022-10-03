@@ -6,21 +6,21 @@ public class App {
 
     //todo Task 1
     public void sayHelloWorld() {
-        System.out.println("Hello World");
+        System.out.println("Hello World!");
     }
 
     //todo Task 2
     public void helloRobot() {
         System.out.println("0123456789012345678901");
-        System.out.println("           __");
-        System.out.println("  _(\\    |@@|");
+        System.out.println("         __");
+        System.out.println(" _(\\    |@@|");
         System.out.println("(__/\\__ \\--/ __");
-        System.out.println("    \\___|----|  |   __");
-        System.out.println("     \\  }{ /\\ )_ / _\\");
-        System.out.println("     /\\__/\\ \\__O (__");
-        System.out.println("    (--/\\--)    \\__/");
-        System.out.println("    _)( )(_");
-        System.out.println("   `---''---`");
+        System.out.println("   \\___|----|  |   __");
+        System.out.println("       \\ }{ /\\ )_ / _\\");
+        System.out.println("       /\\__/\\ \\__O (__");
+        System.out.println("      (--/\\--)    \\__/");
+        System.out.println("      _)(  )(_");
+        System.out.println("     `---''---`");
     }
 
     //todo Task 3
@@ -62,11 +62,12 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
         int y = scanner.nextInt();
+        System.out.print("Before Swap:" + System.lineSeparator() + "x: y: ");
         x = x + y;
         y = x - y;
         x = x - y;
-
-        System.out.println("x:" + x + ", y:" + y);
+        System.out.println("After Swap:"  );
+        System.out.println("x: " + x + System.lineSeparator() + "y: " + y);
 
     }
 
@@ -75,10 +76,11 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         int n1 = scanner.nextInt();
         int n2 = scanner.nextInt();
+        System.out.print("n1: n2: ");
         if (n1 > n2) {
             System.out.println("n1 > n2");
         }
-        if (n1 > n2) {
+        if (n1 < n2) {
             System.out.println("n2 > n1");
         }
         if (n1 == n2) {
@@ -92,7 +94,7 @@ public class App {
 
         Scanner scanner = new Scanner(System.in);
         int revenue = scanner.nextInt();
-        System.out.println("Enter annual Revenue: ");
+        System.out.print("Enter annual Revenue: ");
 
         if (revenue < 0 || revenue >= 100000) {
             System.out.println("Invalid Revenue");
@@ -110,6 +112,7 @@ public class App {
 
     //todo Task 8
     public void getCommissionRate() {
+        System.out.print("Enter CommissionClass: ");
         Scanner scanner = new Scanner(System.in);
         int p = scanner.nextInt();
 
@@ -127,7 +130,7 @@ public class App {
                 System.out.println("Your Commission Rate was set to 0.04");
                 break;
             default:
-                System.out.println("Your Commission Rate was set to 0.00");
+                System.out.println("Your Commission Rate was set to 0.0");
                 break;
 
         }
@@ -135,6 +138,7 @@ public class App {
 
     //todo Task 9
     public void leapyear() {
+        System.out.print("Year: ");
         Scanner scanner = new Scanner(System.in);
         int i = scanner.nextInt();
 
@@ -160,7 +164,7 @@ public class App {
             reverse = reverse * 10 + (number % 10);
             number /= 10;
         } while (number > 0);
-        System.out.println("Reversed:" + reverse);
+        System.out.println("Number: " + reverse);
         return reverse;
     }
 
