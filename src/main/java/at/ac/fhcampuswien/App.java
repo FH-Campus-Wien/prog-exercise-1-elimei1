@@ -138,20 +138,24 @@ public class App {
 
     //todo Task 9
     public void leapyear() {
-        System.out.print("Year: ");
+
         Scanner scanner = new Scanner(System.in);
         int i = scanner.nextInt();
+        System.out.print("Year: ");
 
-
-        if ((i % 4 != 0) && i % 400 != 0) {
+        if (i % 4 != 0 ) {
             System.out.println("Leapyear");
-        } else if ((i % 100 == 0) && i % 400 != 0) {
+        } else if (i % 400 != 0) {
+           System.out.println("Leapyear");
+        }
+        else if (i % 100 == 0) {
             System.out.println("Not a Leapyear");
-        } else {
-            System.out.println(i + " is not a leap year.");
-
         }
     }
+
+
+
+
 
     //todo Task 10
     public int transposedNumbers() {
