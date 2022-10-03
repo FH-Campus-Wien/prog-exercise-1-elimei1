@@ -39,8 +39,7 @@ public class App {
         int c = (int) l;
         int d = (int) d1;
         int e = (int) d2;
-        int f = Character.getNumericValue(ch);
-        int sum = a + b + c + d + e + f + hexVal + i1;
+        int sum = a + b + c + d + e + (int) ch + hexVal + i1;
         System.out.println(sum);
 
 
@@ -121,7 +120,7 @@ public class App {
                 System.out.println("Your Commission Rate was set to 0.01");
                 break;
             case 2:
-                System.out.println("Your Commision Rate was set to 0.02");
+                System.out.println("Your Commission Rate was set to 0.02");
                 break;
             case 3:
                 System.out.println("Your Commission Rate was set to 0.03");
@@ -144,8 +143,8 @@ public class App {
         System.out.print("Year: ");
 
         if (i % 4 != 0 ) {
-            System.out.println("Leapyear");
-        } else if (i % 400 != 0) {
+            System.out.println("Not a Leapyear");
+        } else if (i % 400 == 0) {
            System.out.println("Leapyear");
         }
         else if (i % 100 == 0) {
