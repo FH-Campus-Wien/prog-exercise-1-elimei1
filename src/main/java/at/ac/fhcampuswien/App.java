@@ -158,17 +158,19 @@ public class App {
 
     //todo Task 10
     public int transposedNumbers() {
+        /**
+         * The following 11 lines of Code have been taken from the Internet | https://www.quora.com/How-do-I-swap-or-reverse-a-3-digit-number-in-Java, last visit: 04.10.2022
+         */
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
 
-
-        int reverse = 0;
+        int newnumber = 0;
         do {
-            reverse = reverse * 10 + (number % 10);
+            newnumber = newnumber * 10 + (number % 10);
             number /= 10;
         } while (number > 0);
-        System.out.println("Number: " + reverse);
-        return reverse;
+        System.out.println("Number: " + newnumber);
+        return newnumber;
     }
 
 
